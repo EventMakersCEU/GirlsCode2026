@@ -1,0 +1,57 @@
+<!--
+  ============================================================
+  index.html - Arquivo HTML BASE do desafio
+  ------------------------------------------------------------
+  Este é o ponto de partida do seu frontend. Sinta-se livre
+  para adicionar classes, ids, divs extras e o que mais você
+  precisar para estilizar tudo do zero no style.css.
+
+  A estrutura abaixo é PROPOSITALMENTE simples e sem estilo.
+  Você pode (e deve!) reorganizar, criar componentes,
+  acrescentar header bonito, etc.
+  ============================================================
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Girls Code 2026 - Chat com IA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Girls Code 2026</h1>
+    </header>
+
+    <main>
+      <!--
+        Container onde as mensagens (da usuária e da IA) são adicionadas
+        dinamicamente pelo script.js. Cada mensagem vira uma <div> com
+        as classes:
+          .mensagem.mensagem-usuario  -> mensagem enviada pela usuária
+          .mensagem.mensagem-bot      -> resposta da IA
+          .mensagem.mensagem-erro     -> mensagens de erro do sistema
+      -->
+      <section id="mensagens" aria-live="polite"></section>
+
+      <!--
+        Formulário de envio. Ao apertar Enter ou clicar no botão,
+        o script.js intercepta o envio (preventDefault) e chama o backend.
+      -->
+      <form id="form-chat" autocomplete="off">
+        <label for="campo-pergunta">Sua pergunta:</label>
+        <input
+          id="campo-pergunta"
+          name="pergunta"
+          type="text"
+          placeholder="Digite sua pergunta aqui..."
+          required
+        />
+        <button type="submit" id="botao-enviar">Enviar</button>
+      </form>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

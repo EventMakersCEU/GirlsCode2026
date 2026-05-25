@@ -1,0 +1,52 @@
+# ============================================================
+# .gitignore - Girls Code 2026
+# ------------------------------------------------------------
+# Arquivos e pastas que NAO devem ir para o GitHub.
+# ============================================================
+
+# --- Segredos: NUNCA suba o arquivo .env de verdade! ---
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# --- Ambientes virtuais do Python ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Cache do Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Banco de vetores gerado em runtime ---
+# (e recriado automaticamente pelo backend a cada indexacao)
+backend/chroma_db/
+chroma_db/
+*.sqlite3
+*.sqlite3-journal
+
+# --- Logs e arquivos temporarios ---
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Editores / IDEs ---
+.vscode/
+.idea/
+*.code-workspace
+.cursor/
+
+# --- Dependencias instaladas (sao reinstaladas via requirements.txt) ---
+node_modules/
+*.lock.bak

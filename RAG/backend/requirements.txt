@@ -1,0 +1,32 @@
+# ============================================================
+# DEPENDENCIAS DO BACKEND - Girls Code 2026
+# ------------------------------------------------------------
+# Instale tudo de uma vez com:
+#   pip install -r requirements.txt
+# ============================================================
+
+# --- Servidor web (FastAPI + Uvicorn) ---
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+python-dotenv==1.0.1
+
+# --- Integracao com o Groq (modelo de IA Llama 3.3 70B - gratuito) ---
+groq==0.13.0
+
+# --- Embeddings locais (sem limite, sem chave de API) ---
+# Baixa um modelo multilingual leve (~220MB) na primeira execucao.
+fastembed==0.4.2
+
+# --- Banco de vetores local (RAG) ---
+chromadb==0.5.23
+
+# --- Leitores de documentos ---
+pypdf==5.1.0
+pandas==2.2.3
+openpyxl==3.1.5
+
+# --- Leitor de paginas web (links.txt) ---
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.3.0

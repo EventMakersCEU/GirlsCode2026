@@ -1,0 +1,17 @@
+# ============================================================
+# ARQUIVO DE LINKS - Base de conhecimento via URLs
+# ------------------------------------------------------------
+# Cole uma URL por linha. O backend vai abrir cada uma,
+# extrair o texto da pagina e adicionar a base de conhecimento.
+#
+# Regras:
+#   - Uma URL por linha (sem virgulas ou separadores).
+#   - Linhas que comecam com "#" sao ignoradas (comentarios).
+#   - Linhas em branco sao ignoradas.
+#
+# Apos editar este arquivo, reinicie o servidor OU chame
+# o endpoint POST /reindexar para que as URLs sejam lidas.
+# ============================================================
+
+# Exemplos (descomente removendo o "#" do inicio para usar):
+# https://ceu.unifei.edu.br/
