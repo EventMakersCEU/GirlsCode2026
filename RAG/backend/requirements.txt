@@ -16,10 +16,10 @@ groq==0.13.0
 
 # --- Embeddings locais (sem limite, sem chave de API) ---
 # Baixa um modelo multilingual leve (~220MB) na primeira execucao.
-fastembed==0.4.2
+fastembed==0.8.0
 
 # --- Banco de vetores local (RAG) ---
-chromadb==0.5.23
+chromadb==1.5.9
 
 # --- Leitores de documentos ---
 pypdf==5.1.0

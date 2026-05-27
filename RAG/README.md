@@ -32,7 +32,7 @@ girls-code-rag/
 
 ## Pré-requisitos
 
-- **Python 3.10 ou superior** instalado.
+- **Python 3.10 - 3.12** instalado.
 - Uma **chave gratuita do Groq**, obtida em [https://console.groq.com/keys](https://console.groq.com/keys) (basta criar uma conta gratis).
 
 ---
@@ -68,7 +68,7 @@ GROQ_API_KEY=cole_sua_chave_aqui
 Em seguida, ainda dentro de `backend/`, suba o servidor:
 
 ```bash
-uvicorn main:app --reload
+uvicorn main:app
 ```
 
 Se tudo deu certo, você verá algo como:
