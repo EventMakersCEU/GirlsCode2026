@@ -145,13 +145,6 @@ Resposta:"""
 
 ---
 
-## Endpoints do backend (caso queira testar com curl/Postman)
-
-- `POST /perguntar` → corpo `{ "pergunta": "..." }`, devolve `{ "resposta": "...", "fontes": [...] }`.
-- `POST /reindexar` → relê tudo dentro de `documentos/`.
-
----
-
 ## Problemas comuns
 
 
